@@ -1,0 +1,21 @@
+
+.candy-ghost-button{
+  --full:linear-gradient(red 0 0);
+
+  border: solid 5px  transparent;
+padding: 1em 1.5em;
+color: white;
+border-radius: 9em;
+background-origin: border-box;
+background-clip: border-box;
+box-sizing: border-box;
+
+background: linear-gradient(to right bottom, #30e8bf, #ff8235)border-box;
+text-transform: uppercase;
+-webkit-mask:var(--full),var(--full)text,var(--full)padding-box;
+
+  
+-webkit-text-fill-color: transparent;
+-webkit-mask-composite: xor;
+
+}

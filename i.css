@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    background: url('') 50%/cover fixed;
+  }
+  
+  button {
+    --grad: linear-gradient(to right bottom, var(--slist));
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+    position: relative;
+    margin: 1em auto;
+    border: solid 0.25em transparent;
+    padding: 1em 1.5em;
+    border-radius: 9em;
+    background: var(--grad) border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: 700 1.5em/1.25 ubuntu, sans-serif;
+    text-transform: uppercase;
+  }
+  button::before {
+    position: absolute;
+    z-index: -1;
+    inset: -0.25em;
+    border: inherit;
+    border-radius: inherit;
+    
+    background: url(ss.png) 50%/cover fixed padding-box, var(--grad) border-box;
+  
+    content: "";
+  }
+  button::after {
+    content: attr(data-ico);
+  }
