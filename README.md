@@ -1,2 +1,2 @@
 # Candy-Ghost-Button
-creating Candy Ghost Button From Scratch
+Creating Candy Ghost Button From Scratch
